@@ -4,23 +4,23 @@ import { colors } from "../../constants/colors";
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    backgroundColor: colors.lightGray,
+    backgroundColor: colors.white,
     borderRadius: 12,
-    elevation: 1,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
+    elevation: 3,
     shadowOffset: { width: 2, height: 2 },
-    shadowOpacity: 0.3,
+    shadowOpacity: 0.4,
     shadowRadius: 12,
   },
   flag: {
-    width: 128,
+    borderTopLeftRadius: 12,
+    borderTopRightRadius: 12,
+    width: "100%",
     height: 64,
-    marginBottom: 4,
     resizeMode: "stretch",
   },
   name: {
     fontWeight: "bold",
+    marginVertical: 4,
     textAlign: "center",
   },
 });

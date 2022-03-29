@@ -11,7 +11,7 @@ type ContextType = {
   searchText: string;
   setSearchText: React.Dispatch<React.SetStateAction<string>>;
   countries: Country[];
-  fetchCountries: (args: { name: string }) => void;
+  fetchCountries: (args?: { name: string }) => void;
   loading: boolean;
   error: boolean;
 };
@@ -24,7 +24,8 @@ const CountriesProvider: React.FC = ({ children }) => {
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(false);
 
-  const fetchCountries = async ({ name }: { name: string }) => {
+  const fetchCountries = async (args?: { name: string }) => {
+    const { name } = args || {};
     setLoading(true);
 
     try {

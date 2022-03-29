@@ -1,10 +1,13 @@
+import { NavigationContainer } from "@react-navigation/native";
 import CountriesProvider from "./src/contexts/countries";
-import Root from "./src/screens/root/Root";
+import CountryRoute from "./src/routes/CountryRoute";
 
 export default function App() {
   return (
     <CountriesProvider>
-      <Root />
+      <NavigationContainer>
+        <CountryRoute />
+      </NavigationContainer>
     </CountriesProvider>
   );
 }

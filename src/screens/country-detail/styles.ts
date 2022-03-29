@@ -2,14 +2,19 @@ import { StyleSheet } from "react-native";
 import { colors } from "../../constants/colors";
 
 const styles = StyleSheet.create({
-  textInput: {
-    borderColor: colors.gray,
-    borderRadius: 12,
-    borderWidth: 1,
-    height: 40,
-    marginBottom: 12,
+  container: {
     padding: 12,
+  },
+  field: {
+    fontWeight: "bold",
+  },
+  flag: {
+    borderWidth: 1,
+    borderColor: colors.gray,
     width: "100%",
+    height: 192,
+    resizeMode: "contain",
+    marginBottom: 12,
   },
 });
 

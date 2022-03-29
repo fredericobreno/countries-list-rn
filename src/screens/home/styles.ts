@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     padding: 16,
-    paddingTop: StatusBar.currentHeight,
   },
 });
 
